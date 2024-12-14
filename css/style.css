@@ -1018,6 +1018,8 @@ td {
     }
     img[data-mobile-src] {
         width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     .function-container__func-text-blue {
