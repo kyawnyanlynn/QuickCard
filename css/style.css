@@ -891,9 +891,6 @@ td {
 
 /* SmartPhone */
 @media (max-width: 480px) {
-    img{
-        width: 100px;
-    }
     .header-container {
         width: 100%;
     }
@@ -1020,7 +1017,7 @@ td {
         margin-bottom: 87px;
     }
     img[data-mobile-src] {
-        width: 250px;
+        /* width: 250px; */
     }
 
     .function-container__func-text-blue {
