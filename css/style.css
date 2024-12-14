@@ -1,8 +1,6 @@
 html,
 body {
-    font-family: "Hiragino Kaku Gothic ProN",
-        "Toppan Bunkyu Gothic"
-        "sans-serif";
+    font-family: "hiragino-kaku-gothic-pron","toppan-bunkyu-gothic-pr6n",sans-serif;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -83,7 +81,7 @@ a {
 .header__nav a {
     text-decoration: none;
     color: #0054AC;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 14px;
     font-weight: 600;
     transition: font-size 0.3s ease, transform 0.2s ease;
@@ -170,7 +168,7 @@ a {
 }
 
 .title-container a {
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
@@ -181,7 +179,7 @@ a {
 .worries-container-heading-pc {
     margin-top: 80px;
     text-align: center;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 35px;
     font-weight: 600;
 
@@ -238,7 +236,7 @@ a {
 }
 
 .hd2 {
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
@@ -254,8 +252,7 @@ a {
 }
 
 .function-container p {
-    font-family: "Toppan Bunkyu Gothic",
-        "Sans Serif";
+    font-family: "toppan-bunkyu-gothic-pr6n",sans-serif;
     line-height: 50px;
     font-size: 20px;
     margin: 0;
@@ -263,16 +260,14 @@ a {
 
 .bluediv-h3 {
     border-bottom: 3px solid white;
-    font-family: "Toppan Bunkyu Gothic",
-        "Sans Serif";
+    font-family: "toppan-bunkyu-gothic-pr6n",sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
 .whitediv-h3 {
     border-bottom: 3px solid #0054AC;
-    font-family: "Toppan Bunkyu Gothic",
-        "Sans Serif";
+    font-family: "toppan-bunkyu-gothic-pr6n",sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
@@ -486,7 +481,7 @@ a {
     background-color: #FFFFFF;
     border: 0;
     box-shadow: 0px 3px 4px #0000001d;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #B1ADAD;
@@ -495,7 +490,7 @@ a {
 .selected-button {
     background-color: #FFFFFF;
     color: #0054AC;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-weight: 600;
     border-radius: 22px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -577,7 +572,7 @@ a {
 .table__topHeading {
     text-align: center;
     font-size: 25px;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-weight: 600;
     /* Adds borders to top header cells */
     padding: 10px;
@@ -635,7 +630,7 @@ a {
 
 .table__leftHeading {
     color: #3C3B3B;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 16px;
     border-bottom: 2px solid #C0C0C0;
     /* Bottom border between cells */
@@ -680,7 +675,7 @@ td {
 
 .faq-container__question-Question {
     color: #0054AC;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 20px;
     font-weight: 600;
     margin: 0;
@@ -718,7 +713,7 @@ td {
     font-weight: 300;
     font-size: 16px;
     margin: 13px 10px 5px 10px;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     line-height: 1.6;
 
 }
@@ -734,7 +729,7 @@ td {
     text-align: center;
     background-color: #FFCF48;
     color: #000000;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 20px;
     font-weight: 600;
     display: block;
@@ -748,7 +743,7 @@ td {
     text-align: center;
     background-color: #FFFFFF;
     color: #0054AC;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron",sans-serif;
     font-size: 20px;
     font-weight: 600;
     display: block;
@@ -799,7 +794,7 @@ td {
     color: #0054AC;
     font-size: 16px;
     font-weight: 600;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
 }
 
 .footer-container__logo-container {
@@ -814,7 +809,7 @@ td {
     color: #0054AC;
     font-size: 16px;
     font-weight: 300;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
 }
 
 .footer__reception {
@@ -843,7 +838,7 @@ td {
     border: 1px solid #0054AC;
     font-size: 20px;
     font-weight: 600;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
     overflow: hidden;
     transition: color 0.3s ease;
     z-index: 1;
@@ -1064,8 +1059,6 @@ td {
         font-size: 18px;
     }
     .hd2{
-        font-family: "hiragino-kaku-gothic-pron", sans-serif;
-        font-weight: 600;
-        font-style: normal;
+       
     }
 }
