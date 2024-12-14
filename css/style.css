@@ -1043,5 +1043,7 @@ td {
         z-index: 1; 
         background-color: #FFFFFF;
     }
-    
+    .comparison-table-container {
+        width: 300px;
+    }
 }
