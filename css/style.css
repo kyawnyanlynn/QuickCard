@@ -1062,6 +1062,8 @@ td {
     .whitediv-h3,
     .bluediv-h3 {
         font-size: 18px;
+    }
+    .hd2{
         font-family: "hiragino-kaku-gothic-pron", sans-serif;
         font-weight: 600;
         font-style: normal;
