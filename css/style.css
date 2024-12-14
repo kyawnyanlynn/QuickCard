@@ -912,7 +912,7 @@ td {
         align-self: center;
         justify-self: center;
         font-size: 25px;
-        letter-spacing: 4px;
+        letter-spacing: ;
         margin-top: 20px;
     }
 
@@ -1010,16 +1010,17 @@ td {
     }
 
     .function-container p {
+        font-size: 15px;
         margin-bottom: 40px;
+        line-height: 35px;
     }
+
     .function-container__func1 p,
     .function-container__func2 p{
         margin-bottom: 87px;
     }
     img[data-mobile-src] {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+        width: 250px;
     }
 
     .function-container__func-text-blue {
@@ -1045,7 +1046,11 @@ td {
         z-index: 1; 
         background-color: #FFFFFF;
     }
-    .comparison-table-container {
+    .comparison-table-container{
         width: 300px;
+    }
+    .whitediv-h3,
+    .bluediv-h3{
+        font-size: 18px;
     }
 }
