@@ -912,7 +912,7 @@ td {
         align-self: center;
         justify-self: center;
         font-size: 25px;
-        letter-spacing: ;
+        letter-spacing: 4px;
         margin-top: 20px;
     }
 
@@ -1017,7 +1017,7 @@ td {
         margin-bottom: 87px;
     }
     img[data-mobile-src] {
-        /* width: 250px; */
+        width: 100%;
     }
 
     .function-container__func-text-blue {
