@@ -939,7 +939,7 @@ td {
     }
 
     .worries-container-heading-pc {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .worries-container__img-container {
@@ -1113,7 +1113,8 @@ td {
     }
 
     .hd2 {
-        font-size: 20px;
+        font-size: 25px;
+        margin-bottom: 40px;
     }
     .footer-container {
         grid-template-columns: 1fr;
@@ -1125,7 +1126,7 @@ td {
             "address"
             "icons"
             "copyright";
-        margin: 10px;
+        padding: 10px;
         gap: 12px;
     }
     .footer-container__logo-container{
@@ -1137,16 +1138,24 @@ td {
         margin: 0 auto;
         width: 200px;
     }
+    .footer-container__text{
+        font-size: 12px;
+    }
     .footer__address{
         text-align: center;
+        font-size: 12px;
     }
     .footer-container__text{
         margin: 0;
     }
     .footer__reception,
     .footer__reception__btn{
+        width: 200px;
         margin: 0;
         justify-self: center;
+    }
+    .footer__copyright{
+        font-size: 10px;
     }
     .cta-container__btn-container{
         flex-direction: column;
