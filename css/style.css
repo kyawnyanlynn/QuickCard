@@ -912,12 +912,11 @@ td {
         align-self: center;
         justify-self: center;
     }
-
     .title__heading {
         align-self: center;
         justify-self: center;
         font-size: 25px;
-        letter-spacing: 0px;
+        letter-spacing: ;
         margin-top: 20px;
     }
 
