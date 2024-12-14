@@ -8,6 +8,16 @@
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ntn5sol',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
@@ -32,15 +42,15 @@
     </header>
     <main class="main">
         <div class="title-container">
-                <h1 class="title__heading">名刺の未来を手のひらに、<br>デジタル化でスムーズな
-                    管理を。</h1>
-                <div class="title__buttons">
-                    <a class="title__button-yellow button">アプリをダウンロード</a>
-                    <a class="title__button-white button">資料をダウンロード</a>
-                </div>
-                <div class="title__img-container">
-                    <img src="img/pc/mainVisual_img.svg" alt="">
-                </div>
+            <h1 class="title__heading">名刺の未来を手のひらに、<br>デジタル化でスムーズな
+                管理を。</h1>
+            <div class="title__buttons">
+                <a class="title__button-yellow button">アプリをダウンロード</a>
+                <a class="title__button-white button">資料をダウンロード</a>
+            </div>
+            <div class="title__img-container">
+                <img src="img/pc/mainVisual_img.svg" alt="">
+            </div>
         </div>
         <div class="worries-container">
             <h2 class="worries-container__heading worries-container-heading-pc">あなたにこんな<span>悩み</span>がありません？</h2>
@@ -71,11 +81,13 @@
                             alt="商談記録のUI画面を拡大している画像">
                         <img class="func1__popup-img-2 popup-func1__img-boxshadow" src="img/pc/function1_msg2.svg"
                             alt="商談記録のUI画面を拡大している画像">
-                        <img class="func_sp-img" src="img/pc/function1_pc.svg" data-default-src="img/pc/function1_pc.svg" data-mobile-src="img/sp/function1_sp.svg" alt="商談記録のUI画面を見せているパソコンの画像">
+                        <img class="func_sp-img" src="img/pc/function1_pc.svg"
+                            data-default-src="img/pc/function1_pc.svg" data-mobile-src="img/sp/function1_sp.svg"
+                            alt="商談記録のUI画面を見せているパソコンの画像">
                     </div>
                 </div>
                 <div class="function-container__func-letter">
-                    <img src="img/pc/function1_text.svg"  alt="機能01というテキスト">
+                    <img src="img/pc/function1_text.svg" alt="機能01というテキスト">
                 </div>
             </div>
             <div class="function-container__func2 right-div">
@@ -83,9 +95,12 @@
                     <img src="img/pc/function2_text.svg" alt="機能02というテキスト">
                 </div>
                 <div class="func2__pc">
-                    <img class="func2__popup-img-1 popup-func__img-boxshadow-whitediv" src="img/pc/function2_msg.svg" alt="名前、役職、会社名エリアなどで検索可を伝えるテキスト">
-                    <img class="func2__popup-img-2 popup-icons-boxshadow-whitediv" src="img/pc/function2_icon.svg" alt="拡大鏡のアイコン">
-                    <img src="img/pc/function2_pc.svg" data-default-src="img/pc/function2_pc.svg" data-mobile-src="img/sp/function2_sp.svg" alt="検索機能のUI画面を見せているパソコンの画像">
+                    <img class="func2__popup-img-1 popup-func__img-boxshadow-whitediv" src="img/pc/function2_msg.svg"
+                        alt="名前、役職、会社名エリアなどで検索可を伝えるテキスト">
+                    <img class="func2__popup-img-2 popup-icons-boxshadow-whitediv" src="img/pc/function2_icon.svg"
+                        alt="拡大鏡のアイコン">
+                    <img src="img/pc/function2_pc.svg" data-default-src="img/pc/function2_pc.svg"
+                        data-mobile-src="img/sp/function2_sp.svg" alt="検索機能のUI画面を見せているパソコンの画像">
                 </div>
                 <div class="function-container__func-text-blue">
                     <h3 class="whitediv-h3">検索機能</h3>
@@ -109,7 +124,8 @@
                             alt="人がスーツケースを持って行ってアイコン">
                         <img class="func3__popup-img-4 popup-icons-boxshadow" src="img/pc/function3_handShakingIcon.svg"
                             alt="握手している二人のアイコン">
-                        <img src="img/pc/function3_pc.svg" data-default-src="img/pc/function3_pc.svg" data-mobile-src="img/sp/function3_sp.svg" alt="カレンダー表示機能のUI画面を見せているパソコンの画像">
+                        <img src="img/pc/function3_pc.svg" data-default-src="img/pc/function3_pc.svg"
+                            data-mobile-src="img/sp/function3_sp.svg" alt="カレンダー表示機能のUI画面を見せているパソコンの画像">
                     </div>
 
                 </div>
@@ -122,9 +138,12 @@
                     <img src="img/pc/function4_text.svg" alt="機能04というテキスト">
                 </div>
                 <div class="func4__pc">
-                    <img class="func4__popup-img-1 popup-icons-boxshadow-whitediv" src="img/pc/function4_CSVIcon.svg" alt="CSVのアインコン">
-                    <img class="func4__popup-img-2 popup-icons-boxshadow-whitediv" src="img/pc/function4_downloadIcon.svg" alt="ダウンロードのアイコン">
-                    <img src="img/pc/function4_pc.svg" data-default-src="img/pc/function4_pc.svg" data-mobile-src="img/sp/function4_sp.svg" alt="CSVダウンロード機能のUI画面を見せているパソコンの画像">
+                    <img class="func4__popup-img-1 popup-icons-boxshadow-whitediv" src="img/pc/function4_CSVIcon.svg"
+                        alt="CSVのアインコン">
+                    <img class="func4__popup-img-2 popup-icons-boxshadow-whitediv"
+                        src="img/pc/function4_downloadIcon.svg" alt="ダウンロードのアイコン">
+                    <img src="img/pc/function4_pc.svg" data-default-src="img/pc/function4_pc.svg"
+                        data-mobile-src="img/sp/function4_sp.svg" alt="CSVダウンロード機能のUI画面を見せているパソコンの画像">
                 </div>
                 <div class="function-container__func-text-blue">
                     <h3 class="whitediv-h3">CSVダウンロード機能</h3>
@@ -141,11 +160,12 @@
                 </div>
                 <div class="function-contianer__func-img">
                     <div class="func5__pc">
-                        <img class="func5__popup-img-1 popup-icons-boxshadow" src="img/pc/function5_googleCalendarIcon.svg"
-                            alt="カレンダのアイコン">
+                        <img class="func5__popup-img-1 popup-icons-boxshadow"
+                            src="img/pc/function5_googleCalendarIcon.svg" alt="カレンダのアイコン">
                         <img class="func5__popup-img-2 popup-icons-boxshadow" src="img/pc/function5_calendarIcon.svg"
                             alt="グーグルカレンダーのアイコン">
-                        <img src="img/pc/function5_pc.svg" data-default-src="img/pc/function5_pc.svg" data-mobile-src="img/sp/function5_sp.svg" alt="Googleカレンダー連携のUI画面を見せているパソコンの画像">
+                        <img src="img/pc/function5_pc.svg" data-default-src="img/pc/function5_pc.svg"
+                            data-mobile-src="img/sp/function5_sp.svg" alt="Googleカレンダー連携のUI画面を見せているパソコンの画像">
                     </div>
                 </div>
                 <div class="function-container__func-letter">
@@ -169,8 +189,8 @@
                         alt="営業報告を見せているUI画面"></div>
                 <div class="mainFeatures-container__slides-container__slide"><img src="img/pc/mainFeatures__group.svg"
                         alt="グループ分けを見せているUI画面"></div>
-                <div class="mainFeatures-container__slides-container__slide"><img src="img/pc/mainFeatures__teamShare.svg"
-                        alt="共有を見せているUI画面"></div>
+                <div class="mainFeatures-container__slides-container__slide"><img
+                        src="img/pc/mainFeatures__teamShare.svg" alt="共有を見せているUI画面"></div>
             </div>
         </div>
         <h2 class="comparison-table-container__heading hd2">なぜQuickCardなの?</h2>
