@@ -1000,18 +1000,19 @@ td {
 
     .func1__popup-img-1 {
         top: -22px;
-        left: -80px;
-        width: 275px;
+        left: -58px;
+        width: 210px;
     }
 
     .func1__popup-img-2 {
         top: 190px;
-        right: -70px;
-        width: 240px;
+        right: -44px;
+        width: 217px;
     }
     .func2__popup-img-1{
-        left: 119px;
+        left: 123px;
         top: 57px;
+        width: 170px;
     }
     .func2__popup-img-2{
         left: -26px;
@@ -1038,7 +1039,7 @@ td {
         left: -35px;
     }
     .func4__popup-img-2 {
-        top: 230px;
+        top: 200px;
         right: -35px;
         width: 100px;
     }
