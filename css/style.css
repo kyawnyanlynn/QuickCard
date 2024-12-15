@@ -961,7 +961,9 @@ td {
         align-items: center;
         height: 300px;
     }
-
+    .worries-container__img-container img[data-mobile-src]{
+        width: auto;
+    }
     .worries-container__img-container__img {
         position: static;
         margin: 10px 0;
@@ -1097,6 +1099,11 @@ td {
     .function-container__func3 p {
         margin-bottom: 87px;
     }
+
+    img[data-mobile-src] {
+        width: 250px;
+    }
+
     .function-container__func-text-blue {
         order: 0;
     }
