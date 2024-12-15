@@ -718,6 +718,15 @@ td {
 
 }
 
+.faq-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-question-wrapper i {
+    display: none;
+}
+
 .Answer-row {
     display: flex;
     align-items: flex-start;
@@ -804,9 +813,11 @@ td {
     gap: 30px;
     margin: 10px 0px 0px 40px;
 }
-.footer-logo{
+
+.footer-logo {
     grid-area: logo-img;
 }
+
 .footer__address {
     color: #0054AC;
     font-size: 16px;
@@ -897,10 +908,12 @@ td {
     .header-container {
         width: 100%;
     }
-    *:hover{
+
+    *:hover {
         transform: none;
         box-shadow: none;
     }
+
     .title-container {
         width: 100%;
         grid-template-columns: 1fr;
@@ -946,6 +959,7 @@ td {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 300px;
     }
 
     .worries-container__img-container__img {
@@ -964,9 +978,12 @@ td {
     }
 
     .businessman-img {
-        position: static;
+        top: 175px;
+        left: 150px;
+        position: absolute;
         transform: none;
-        margin: 20px 0;
+        margin: 0;
+    }
     }
 
     .left-div {
@@ -1015,49 +1032,60 @@ td {
         right: -44px;
         width: 217px;
     }
-    .func2__popup-img-1{
+
+    .func2__popup-img-1 {
         left: 123px;
         top: 57px;
         width: 170px;
     }
-    .func2__popup-img-2{
+
+    .func2__popup-img-2 {
         left: -26px;
         top: 225px;
     }
+
     .func3__popup-img-1 {
         top: 230px;
         right: -26px;
     }
+
     .func3__popup-img-2 {
         top: 196px;
         left: -50px;
     }
+
     .func3__popup-img-3 {
         top: 65px;
         right: -26px;
     }
+
     .func3__popup-img-4 {
         top: 12px;
         left: -26px;
     }
+
     .func4__popup-img-1 {
         top: 75px;
         left: -35px;
     }
+
     .func4__popup-img-2 {
         top: 200px;
         right: -35px;
         width: 100px;
     }
+
     .func5__popup-img-1 {
         top: 174px;
         left: -40px;
     }
+
     .func5__popup-img-2 {
         top: 25px;
         right: -35px;
         width: 100px;
     }
+
     .function-container p {
         font-size: 15px;
         margin-bottom: 40px;
@@ -1116,6 +1144,7 @@ td {
         font-size: 25px;
         margin-bottom: 40px;
     }
+
     .footer-container {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -1129,47 +1158,87 @@ td {
         padding: 10px;
         gap: 12px;
     }
-    .footer-container__logo-container{
+
+    .footer-container__logo-container {
         flex-direction: column;
         margin: 0;
         gap: 0;
     }
-    .footer-logo{
+
+    .footer-logo {
         margin: 0 auto;
         width: 200px;
     }
-    .footer-container__text{
+
+    .footer-container__text {
         font-size: 12px;
     }
-    .footer__address{
+
+    .footer__address {
         text-align: center;
         font-size: 12px;
     }
-    .footer-container__text{
+
+    .footer-container__text {
         margin: 0;
     }
+
     .footer__reception,
-    .footer__reception__btn{
+    .footer__reception__btn {
         width: 200px;
         margin: 0;
         justify-self: center;
     }
-    .footer__copyright{
+
+    .footer__copyright {
         font-size: 10px;
     }
-    .cta-container__btn-container{
+
+    .cta-container__btn-container {
         flex-direction: column;
         gap: 10px;
     }
+
     .cta-container__button-yellow,
-    .cta-container__button-white{
+    .cta-container__button-white {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 56px;
         width: 230px;
     }
-    .cta-container__btn-container a{
+
+    .cta-container__button-yellow:hover,
+    .cta-container__button-white:hover {
+        box-shadow: none;
+    }
+
+    .cta-container__btn-container a {
         font-size: 16px;
     }
+
+    .faq-question-wrapper i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-question-wrapper p,
+    .faq-container__question-Answer p {
+        font-size: 14px;
+    }
+
+    .Question-letter,
+    .Answer-letter {
+        font-size: 16px;
+    }
+
+    .faq-container__question {
+        border-radius: 5px;
+    }
+
+    .faq-container__question-Answer {
+        margin: 0px 10px 5px 10px;
+    }
+
 }

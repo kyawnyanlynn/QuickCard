@@ -56,15 +56,16 @@
             <h2 class="worries-container__heading worries-container-heading-pc">あなたにこんな<span>悩み</span>がありません？</h2>
             <div class="worries-container__img-container">
                 <img class="worries-container__img-container__img worry-1" src="img/pc/worry1.svg"
-                    alt="もらっている名刺が多くてどうやって管理すればいいのかなぁ？というメッセージの画像">
+                data-default-src="img/pc/worry1.svg" data-mobile-src="img/sp/worry1_sp.svg" 
+                alt="もらっている名刺が多くてどうやって管理すればいいのかなぁ？というメッセージの画像">
                 <img class="worries-container__img-container__img worry-2" src="img/pc/worry2.svg"
-                    alt="必要な名刺を探すのに時間がかかり、効率が悪い！というメッセージの画像">
+                data-default-src="img/pc/worry2.svg" data-mobile-src="img/sp/worry2_sp.svg"    alt="必要な名刺を探すのに時間がかかり、効率が悪い！というメッセージの画像">
                 <img class="worries-container__img-container__img worry-3" src="img/pc/worry3.svg"
-                    alt="カレンダーと連携できるアプリが欲しい！というメッセージの画像">
+                data-default-src="img/pc/worry3.svg" data-mobile-src="img/sp/worry3_sp.svg"    alt="カレンダーと連携できるアプリが欲しい！というメッセージの画像">
                 <img class="worries-container__img-container__img worry-4" src="img/pc/worry4.svg"
-                    alt="お金もあまり使いたくない。。というメッセージの画像">
+                data-default-src="img/pc/worry4.svg" data-mobile-src="img/sp/worry4_sp.svg"    alt="お金もあまり使いたくない。。というメッセージの画像">
                 <img class="worries-container__img-container__img businessman-img" src="img/pc/businessman.svg"
-                    alt="サラリーマンが悩んでいる画像">
+                data-default-src="img/pc/businessman.svg" data-mobile-src="img/sp/businessman_sp.svg"    alt="サラリーマンが悩んでいる画像">
             </div>
         </div>
         <div class="function-container">
@@ -243,8 +244,11 @@
         <div class="faq-container">
             <h2 class="faq-question__heading hd2">よくある質問</h2>
             <div class="faq-container__question">
-                <p class="faq-container__question-Question"><span class="Question-letter">Q </span>商談記録を削除した場合、復元は可能ですか？
-                </p>
+                <div class="faq-question-wrapper">
+                    <p class="faq-container__question-Question"><span class="Question-letter">Q </span>商談記録を削除した場合、復元は可能ですか？
+                    </p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
                 <hr>
                 <div class="Answer-row">
                     <p class="Answer-letter">A</p>
@@ -257,8 +261,11 @@
                 </div>
             </div>
             <div class="faq-container__question">
-                <p class="faq-container__question-Question"><span class="Question-letter">Q </span>他のアプリやサービスと連携できますか？
-                </p>
+                <div class="faq-question-wrapper">
+                    <p class="faq-container__question-Question"><span class="Question-letter">Q </span>他のアプリやサービスと連携できますか？
+                    </p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
                 <hr>
                 <div class="Answer-row">
                     <p class="Answer-letter">A</p>
@@ -268,8 +275,11 @@
                 </div>
             </div>
             <div class="faq-container__question">
-                <p class="faq-container__question-Question"><span class="Question-letter">Q </span>無料プランと有料プランの違いは何ですか？
-                </p>
+                <div class="faq-question-wrapper">
+                    <p class="faq-container__question-Question"><span class="Question-letter">Q </span>無料プランと有料プランの違いは何ですか？
+                    </p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
                 <hr>
                 <div class="Answer-row">
                     <p class="Answer-letter">A</p>
@@ -283,8 +293,8 @@
         <div class="cta-container">
             <h2 class="cta-container__heading hd2">アプリを今すぐダウンロード</h2>
             <div class="cta-container__btn-container">
-                <a class="button cta-container__button-yellow" href="#">アプリをダウンロード</a>
-                <a class="button cta-container__button-white" href="#">資料をダウンロード</a>
+                <a class="button cta-container__button-yellow" href="">アプリをダウンロード</a>
+                <a class="button cta-container__button-white" href="">資料をダウンロード</a>
             </div>
         </div>
     </main>
