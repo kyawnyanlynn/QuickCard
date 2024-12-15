@@ -952,7 +952,7 @@ td {
     }
 
     .worries-container-heading-pc {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .worries-container__img-container {
@@ -980,13 +980,12 @@ td {
     }
 
     .businessman-img {
-        top: 175px;
-        left: 150px;
+        top: 190px;
+        left: 86px;
         position: absolute;
         transform: none;
         margin: 0;
     }
-
 
     .left-div {
         flex-direction: column;
