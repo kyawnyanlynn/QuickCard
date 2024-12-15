@@ -984,7 +984,7 @@ td {
         transform: none;
         margin: 0;
     }
-    }
+
 
     .left-div {
         flex-direction: column;
@@ -1097,11 +1097,6 @@ td {
     .function-container__func3 p {
         margin-bottom: 87px;
     }
-
-    img[data-mobile-src] {
-        width: 250px;
-    }
-
     .function-container__func-text-blue {
         order: 0;
     }
