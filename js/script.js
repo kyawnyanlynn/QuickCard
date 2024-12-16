@@ -50,3 +50,12 @@ hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
 });
+
+//よくある質問
+const faqs = document.querySelectorAll('.faq-container__question');
+
+faqs.forEach(faq =>{
+    faq.addEventListener("click", ()=>{
+        faq.classList.toggle("active");
+    })
+})
