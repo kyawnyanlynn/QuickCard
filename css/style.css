@@ -6,7 +6,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    background: rgb(237, 250, 255);
     background: linear-gradient(351deg, rgba(237, 250, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(237, 250, 255, 1) 100%);
 }
 
@@ -318,6 +317,7 @@ a {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    color: #0E202E;
     margin: 90px 0px 50px 0px;
 }
 
@@ -542,8 +542,49 @@ a {
 
 /* function5 */
 /* 特徴セックション */
+.mainFeatures-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.mainFeatures-container__slides-container__slide {
+    height: 100%;
+    /* Ensure the slides fill the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.slide-nav {
+    position: absolute;
+    top: 415px;
+    background-color: #D9D9D9;
+    color: #8C8A8A;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-slide {
+    left: 35px;
+}
+
+.next-slide {
+    right: 35px;
+}
+
+.mainFeatures-container__slides-container__slide:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .mainFeatures-container__buttons-container {
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -572,9 +613,7 @@ a {
     font-weight: 600;
     border-radius: 22px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for button */
     transform: scale(1.1);
-    /* Slightly scale up the active button */
 }
 
 .mainFeatures-container {
@@ -583,7 +622,6 @@ a {
     padding: 0;
     max-width: 100vw;
     overflow: hidden;
-    /* Ensures no overflow */
 }
 
 .mainFeatures-container__slides-container {
@@ -631,60 +669,41 @@ a {
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 2px 7px 12px #0000002f;
-    /* Rounded corners for the container */
     overflow: hidden;
-    /* Prevents content from overflowing the rounded corners */
-    /* Outer border of the table */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional shadow */
 }
 
-/* Table styling */
 .comparison-table-container__table {
     border-collapse: collapse;
-    /* Ensures borders between cells are collapsed */
     width: 100%;
-    /* Makes the table fill the container */
 }
 
-/* Top header cells (A社, B社, 自社) */
 .table__topHeading {
     text-align: center;
     font-size: 25px;
     font-family: "hiragino-kaku-gothic-pron", sans-serif;
     font-weight: 600;
-    /* Adds borders to top header cells */
     padding: 10px;
-    /* Padding for spacing */
     height: 30px;
-    /* background-color: red; Optional background color */
 }
 
 .table__topHeading:last-child {
     background-color: #FFCF48;
 }
 
-/* Left header cells (row labels) */
 .table__leftHeading {
     text-align: left;
     font-weight: bold;
     padding: 10px;
-    /* Adds borders to left header cells */
     height: 30px;
-    /* background-color: blue; Optional background color */
 }
 
-/* Body cells */
-/* Last row for special styling (optional) */
 .table__row {
     border-bottom: none;
-    /* Removes bottom border for the last row */
 }
 
-/* Add custom icon styling if needed */
 .fa-regular.fa-circle {
     font-size: 20px;
     color: #0054AC;
-    /* Green color for icons */
 }
 
 .fa-regular.fa-x {
@@ -694,15 +713,12 @@ a {
 
 .comparison-table-container__table tr td:nth-child(4) i {
     color: #FFCF48;
-    /* Yellow color */
     font-size: 20px;
-    /* Adjust font size */
 }
 
 .table__topHeading {
     width: 100px;
     border-left: 1px solid rgb(207, 13, 13);
-    /* Left border between cells */
 
 }
 
@@ -711,7 +727,6 @@ a {
     font-family: "hiragino-kaku-gothic-pron", sans-serif;
     font-size: 16px;
     border-bottom: 2px solid #C0C0C0;
-    /* Bottom border between cells */
 }
 
 .topLeft-cell {
@@ -982,6 +997,19 @@ td {
 
 /* SmartPhone */
 @media (max-width: 480px) {
+    body {
+        background-image:
+            url('../img/pc/bg_vector.svg'),
+            url('../img/pc/bg_vector.svg'),
+            url('../img/pc/bg_vector.svg');
+
+            background-position: -667% 9%, -850% 86%, -13% 27%;
+
+        background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat;
+    }
     .header__logo {
         font-size: 18px;
     }
@@ -1027,7 +1055,7 @@ td {
         right: 0;
         gap: 50px;
     }
-    
+
     *:hover {
         transform: none;
     }
@@ -1241,7 +1269,16 @@ td {
     .mainFeatures-container {
         position: relative;
         z-index: 1;
-        background-color: #FFFFFF;
+        background: linear-gradient(351deg, rgb(247 252 255) 0%, rgba(255, 255, 255, 1) 40%, rgb(248 253 255) 100%);
+    } 
+
+    .mainFeatures__current-slide-heading {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #0E202E;
+        width: 100%;
     }
 
     .comparison-table-container {
@@ -1267,20 +1304,20 @@ td {
     }
 
     .table__leftHeading {
-        font-size: 12px; 
+        font-size: 12px;
         padding: 8px;
         height: auto;
     }
 
     td {
-        padding: 10px; 
-        font-size: 10px; 
+        padding: 10px;
+        font-size: 10px;
         height: auto;
     }
 
     .fa-regular.fa-circle,
-    .fa-regular.fa-x ,
-    .comparison-table-container__table tr td:nth-child(4) i{
+    .fa-regular.fa-x,
+    .comparison-table-container__table tr td:nth-child(4) i {
         font-size: 14px;
     }
 
@@ -1292,9 +1329,11 @@ td {
         background-color: #1C73CE;
         color: #FFFFFF;
     }
+
     .topLeft-cell {
         height: auto;
-    }    
+    }
+
     .faq-question-wrapper i {
         display: flex;
         justify-content: center;
@@ -1321,29 +1360,35 @@ td {
     .faq-container__question-Answer {
         margin: 0px 10px 5px 10px;
     }
-    .faq-container__question{
+
+    .faq-container__question {
         width: auto;
         margin: 0px 20px 30px 20px;
     }
-    .faq-question-wrapper{
+
+    .faq-question-wrapper {
         height: 40px;
         align-items: center;
     }
-    
+
     .Answer-row {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1.4s ease;
     }
-    .faq-container__question.active .Answer-row{
+
+    .faq-container__question.active .Answer-row {
         max-height: 600px;
     }
-    .faq-container__question.active .fa-solid{
+
+    .faq-container__question.active .fa-solid {
         transform: rotate(180deg);
     }
-    .fa-solid{
+
+    .fa-solid {
         transition: transform 0.4s ease-in;
     }
+
     hr {
         display: none;
     }
