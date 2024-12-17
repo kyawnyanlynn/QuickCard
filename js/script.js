@@ -65,8 +65,12 @@ function showSlide(index) {
     }
 }
 
-// Initialize the slider
-showSlide(currentSlideIndex);
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlideIndex); // Initialize with the first slide
+});
+window.addEventListener('resize', () => {
+    showSlide(currentSlideIndex);
+});
 
 // Automatically change slides every 5 seconds
 setInterval(() => {
@@ -95,22 +99,39 @@ document.querySelector('.next-slide').addEventListener('click', nextSlide);
 document.querySelector('.prev-slide').addEventListener('click', prevSlide);
 //写真変更
 function updateImageSources() {
-    const images = document.querySelectorAll('img[data-mobile-src]');
-    images.forEach(img => {
-        if (window.matchMedia('(max-width: 480px)').matches) {
-            // Use the mobile version
-            img.src = img.getAttribute('data-mobile-src');
-        } else {
-            // Revert to the original version
-            img.src = img.getAttribute('data-default-src');
+    const allImages = document.querySelectorAll('img[data-mobile-src]'); // Select all images with data-mobile-src
+    const worriesImages = document.querySelector('.worries-container')?.querySelectorAll('img[data-mobile-src]'); // Images within worries-container
+    
+    // Handle max-width: 480px (affect all images)
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        allImages.forEach(img => {
+            img.src = img.getAttribute('data-mobile-src'); // Switch to mobile src
+        });
+    }
+    // Handle max-width: 1024px (affect only worries-container images)
+    else if (window.matchMedia('(max-width: 1024px)').matches) {
+        if (worriesImages) {
+            worriesImages.forEach(img => {
+                img.src = img.getAttribute('data-mobile-src'); // Switch to mobile src for worries-container images
+            });
         }
-    });
+        // Revert other images to their default source
+        allImages.forEach(img => {
+            if (!img.closest('.worries-container')) { // Exclude worries-container images
+                img.src = img.getAttribute('data-default-src');
+            }
+        });
+    }
+    // Revert all images to their default src for larger screens
+    else {
+        allImages.forEach(img => {
+            img.src = img.getAttribute('data-default-src');
+        });
+    }
 }
 
-// Call the function on page load
-updateImageSources();
-
-// Add event listener for screen resize
+// Call this function on load and on window resize
+window.addEventListener('load', updateImageSources);
 window.addEventListener('resize', updateImageSources);
 const hamMenu = document.querySelector(".ham-menu");
 
