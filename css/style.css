@@ -1409,7 +1409,8 @@ td {
     }
 
     .faq-container__question-Answer{
-        margin-top: 5px;
+        font-size: 16px;
+        margin-top: 4px;
     }
     .faq-container__question{
         padding: 10px 15px 10px 15px;
@@ -1494,13 +1495,11 @@ td {
     body {
         background-image:
             url('../img/pc/bg_vector.svg'),
-            url('../img/pc/bg_vector.svg'),
             url('../img/pc/bg_vector.svg');
 
-        background-position: -667% 9%, -850% 86%, -13% 27%;
+        background-position: -487% 9%, -500% 86%;
 
         background-repeat:
-            no-repeat,
             no-repeat,
             no-repeat;
     }
@@ -1538,6 +1537,11 @@ td {
         display: block;
     }
 
+    .hamburger__nav__link a {
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 600;
+    }
     .header__nav {
         display: none;
     }
@@ -1545,7 +1549,14 @@ td {
     .off-screen-menu {
         right: -100%;
     }
-
+    .off-screen__nav__link-button {
+        height: 70px;
+        width: 300px;
+        border-radius: 35px;
+    }
+    .off-screen__nav__link-button a{
+        font-size: 22px;
+    }
     .off-screen-menu.active {
         right: 0;
         gap: 50px;
@@ -1627,7 +1638,7 @@ td {
 
     .businessman-img {
         top: 230px;
-        left: 123px;
+        left: 73px;
         position: absolute;
         transform: none;
         margin: 0;
@@ -1860,7 +1871,8 @@ td {
     }
 
     .faq-container__question-Answer {
-        margin: 0px 10px 5px 10px;
+        font-size: 12px;
+        margin: 5px 10px 5px 10px;
     }
 
     .faq-container__question {
@@ -1870,19 +1882,22 @@ td {
 
     .faq-question-wrapper {
         height: 40px;
+        justify-content: space-between;
         align-items: center;
     }
 
     .Answer-row {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 1.4s ease;
+        transition: max-height 1.2s ease;
     }
 
     .faq-container__question.active .Answer-row {
         max-height: 600px;
     }
-
+    .faq-container__question{
+        padding: 10px 5px;
+    }
     .faq-container__question.active .fa-solid {
         transform: rotate(180deg);
     }
