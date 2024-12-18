@@ -1,5 +1,46 @@
 let currentSlideIndex = 0;
+window.addEventListener('load', function() {
+    // Select the preloader element (only the one with the "preloader-text" class)
+    const preloader = document.querySelector('.preloader');
+    const preloaderText = document.querySelector('.preloader-text');
 
+    // Fade out the preloader after the page loads
+    preloaderText.style.animation = 'fadeOut 1s forwards';
+
+    // Wait until the fade-out animation completes, then remove preloader
+    preloader.addEventListener('animationend', function() {
+        preloader.style.display = 'none'; // Hide preloader after animation
+    });
+});
+
+document.addEventListener('scroll', function () {
+    const images = document.querySelectorAll('.popup-func1__img-boxshadow, .popup-func__img-boxshadow-whitediv, .popup-icons-boxshadow, .popup-icons-boxshadow-whitediv');
+    const windowHeight = window.innerHeight;
+
+    images.forEach(image => {
+        const imageTop = image.getBoundingClientRect().top;
+        if (imageTop < windowHeight) {
+            image.classList.add('visible');
+        }
+    });
+});
+document.querySelector('.header__nav').addEventListener('click', function(event) {
+    // Check if the clicked element is an <a> tag and has a `data-target` attribute
+    if (event.target.tagName === 'A' && event.target.dataset.target) {
+        event.preventDefault(); // Prevent default anchor behavior
+        
+        // Get the target element using the `data-target` value
+        const targetElement = document.querySelector(`.${event.target.dataset.target}`);
+        
+        if (targetElement) {
+            // Scroll to the target element
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Smooth scrolling effect
+                block: 'start'      // Align to the top of the viewport
+            });
+        }
+    }
+});
 function showSlide(index) {
     const buttons = document.querySelectorAll('.mainFeatures__buttons-container__buttons');
     const slides = document.querySelectorAll('.mainFeatures-container__slides-container__slide');
@@ -11,8 +52,6 @@ function showSlide(index) {
     }
 
     const currentButtonText = buttons[index].textContent;
-
-    console.log('Current Button Text:', currentButtonText);
 
     slides.forEach((slide, idx) => {
         slide.classList.remove('active');
@@ -126,7 +165,25 @@ hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
 });
+// Close the menu and navigate when a link is clicked
+offScreenMenu.addEventListener("click", (event) => {
+    if (event.target.tagName === "A" && event.target.dataset.target) {
+        event.preventDefault(); // Prevent default anchor behavior
 
+        // Scroll to the target section
+        const targetElement = document.querySelector(`.${event.target.dataset.target}`);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth", // Smooth scrolling
+                block: "start", // Align to the top of the viewport
+            });
+        }
+
+        // Close the hamburger menu
+        hamMenu.classList.remove("active");
+        offScreenMenu.classList.remove("active");
+    }
+});
 //よくある質問
 const faqs = document.querySelectorAll('.faq-container__question');
 
