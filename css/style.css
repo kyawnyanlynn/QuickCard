@@ -1,6 +1,5 @@
 html,
 body {
-    font-family: "hiragino-kaku-gothic-pron", "toppan-bunkyu-gothic-pr6n", sans-serif;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -55,7 +54,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
+.preloader h1 {
+    font-size: 4rem;
     font-family: "komet", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -81,14 +81,13 @@ h1 {
     left: 50%;
     top: 50%;   
     transform: translate(-50%, -50%);
-    font-size: 4rem;
+    font-size: 3em;
 }
 
 .preloader-text:before {
     content: attr(data-content);
     position: absolute;
     overflow: hidden;
-    max-width: 4em;
     color: #0054AC;
     animation: loading 1.8s linear;
 }
@@ -1109,7 +1108,7 @@ td {
         transform: none;
     }
     .preloader-text{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .header__logo {
         font-size: 25px;
