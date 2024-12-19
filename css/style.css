@@ -1,5 +1,6 @@
 html,
 body {
+    font-family: "hiragino-kaku-gothic-pron","toppan-bunkyu-gothic-pr6n","komet" sans-serif;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -23,7 +24,6 @@ body {
         url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg'),
-        url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg');
 
     background-position:
@@ -34,9 +34,7 @@ body {
         98% 50%,
         -14% 59%,
         103% 71%,
-        109% 93%,
-        -14% 80%;
-
+        109% 93%;
     background-repeat:
         no-repeat,
         no-repeat,
@@ -55,13 +53,14 @@ a {
 }
 
 .preloader h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "komet", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 /* Preloader wrapper */
+
 .preloader {
     position: fixed;
     top: 0;
@@ -81,7 +80,7 @@ a {
     left: 50%;
     top: 50%;   
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .preloader-text:before {
@@ -526,6 +525,18 @@ a {
     position: absolute;
     z-index: 1;
 }
+.func_sp-img {
+    width: 100%;
+    height: auto; /* Ensure the aspect ratio is maintained */
+    max-width: 100%; /* Prevent the image from exceeding the container size */
+    min-width: 512px; /* Minimum width constraint */
+}
+
+.func_sp-img img {
+    width: 100%;  /* Image will scale based on the container's width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Prevent the image from becoming larger than its container */
+}
 
 .func1__popup-img-1 {
     top: 3%;
@@ -648,16 +659,20 @@ a {
 }
 
 .slide-nav {
+    background-color: #D9D9D9;
+    display: none;
     position: absolute;
     top: 415px;
     border: none;
     padding: 15px;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 35%;
     z-index: 10;
 }
-
+.slide-nav i{
+    color: #8C8A8A;
+}
 .prev-slide {
     left: 35px;
 }
