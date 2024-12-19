@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: "hiragino-kaku-gothic-pron","toppan-bunkyu-gothic-pr6n","komet" sans-serif;
+    font-family: "hiragino-kaku-gothic-pron", "toppan-bunkyu-gothic-pr6n", "komet" sans-serif;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -78,7 +78,7 @@ a {
     position: absolute;
     text-align: center;
     left: 50%;
-    top: 50%;   
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
 }
@@ -525,17 +525,24 @@ a {
     position: absolute;
     z-index: 1;
 }
+
 .func_sp-img {
     width: 100%;
-    height: auto; /* Ensure the aspect ratio is maintained */
-    max-width: 100%; /* Prevent the image from exceeding the container size */
-    min-width: 512px; /* Minimum width constraint */
+    height: auto;
+    /* Ensure the aspect ratio is maintained */
+    max-width: 100%;
+    /* Prevent the image from exceeding the container size */
+    min-width: 512px;
+    /* Minimum width constraint */
 }
 
 .func_sp-img img {
-    width: 100%;  /* Image will scale based on the container's width */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 100%; /* Prevent the image from becoming larger than its container */
+    width: 100%;
+    /* Image will scale based on the container's width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    max-width: 100%;
+    /* Prevent the image from becoming larger than its container */
 }
 
 .func1__popup-img-1 {
@@ -670,9 +677,11 @@ a {
     border-radius: 35%;
     z-index: 10;
 }
-.slide-nav i{
+
+.slide-nav i {
     color: #8C8A8A;
 }
+
 .prev-slide {
     left: 35px;
 }
@@ -1122,9 +1131,11 @@ td {
     *:hover {
         transform: none;
     }
-    .preloader-text{
+
+    .preloader-text {
         font-size: 2.5rem;
     }
+
     .header__logo {
         font-size: 25px;
     }
@@ -1605,9 +1616,11 @@ td {
             no-repeat,
             no-repeat;
     }
-    .preloader-text{
+
+    .preloader-text {
         font-size: 2rem;
     }
+
     .header__logo {
         font-size: 18px;
     }

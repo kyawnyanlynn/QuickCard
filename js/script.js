@@ -1,15 +1,12 @@
 let currentSlideIndex = 0;
-window.addEventListener('load', function() {
-    // Select the preloader element (only the one with the "preloader-text" class)
+window.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
     const preloaderText = document.querySelector('.preloader-text');
 
-    // Fade out the preloader after the page loads
     preloaderText.style.animation = 'fadeOut 1s forwards';
 
-    // Wait until the fade-out animation completes, then remove preloader
-    preloader.addEventListener('animationend', function() {
-        preloader.style.display = 'none'; // Hide preloader after animation
+    preloader.addEventListener('animationend', function () {
+        preloader.style.display = 'none';
     });
 });
 
@@ -24,19 +21,16 @@ document.addEventListener('scroll', function () {
         }
     });
 });
-document.querySelector('.header__nav').addEventListener('click', function(event) {
-    // Check if the clicked element is an <a> tag and has a `data-target` attribute
+document.querySelector('.header__nav').addEventListener('click', function (event) {
     if (event.target.tagName === 'A' && event.target.dataset.target) {
-        event.preventDefault(); // Prevent default anchor behavior
-        
-        // Get the target element using the `data-target` value
+        event.preventDefault();
+
         const targetElement = document.querySelector(`.${event.target.dataset.target}`);
-        
+
         if (targetElement) {
-            // Scroll to the target element
             targetElement.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling effect
-                block: 'start'      // Align to the top of the viewport
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     }
