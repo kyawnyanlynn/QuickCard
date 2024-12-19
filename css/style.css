@@ -24,6 +24,7 @@ body {
         url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg'),
+        url('../img/pc/bg_vector.svg'),
         url('../img/pc/bg_vector.svg');
 
     background-position:
@@ -34,6 +35,7 @@ body {
         98% 50%,
         -14% 59%,
         103% 71%,
+        -11% 79%
         109% 93%;
     background-repeat:
         no-repeat,
