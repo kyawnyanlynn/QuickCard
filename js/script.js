@@ -1,14 +1,14 @@
 let currentSlideIndex = 0;
-window.addEventListener("load", function () {
-  const preloader = document.querySelector(".preloader");
-  const preloaderText = document.querySelector(".preloader-text");
+// window.addEventListener("load", function () {
+//   const preloader = document.querySelector(".preloader");
+//   const preloaderText = document.querySelector(".preloader-text");
 
-  preloaderText.style.animation = "fadeOut 1s forwards";
+//   preloaderText.style.animation = "fadeOut 1s forwards";
 
-  preloader.addEventListener("animationend", function () {
-    preloader.style.display = "none";
-  });
-});
+//   preloader.addEventListener("animationend", function () {
+//     preloader.style.display = "none";
+//   });
+// });
 
 document.addEventListener("scroll", function () {
   const images = document.querySelectorAll(

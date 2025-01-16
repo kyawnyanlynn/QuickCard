@@ -379,9 +379,9 @@ a {
   color: #0e202e;
   margin: 75px 0px 50px 0px;
 }
-.responsive-image[data-mobile-src] {
-  height: 393px; /* Set your desired height */
-  width: 195px; /* Set your desired width */
+.responsive-image[data-default-src] {
+  height: 317px; /* Set your desired height */
+  width: 526px; /* Set your desired width */
 }
 /* 機能一覧セックション */
 .function-container {
@@ -500,6 +500,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4%;
 }
 
 .func1__pc,
@@ -1365,16 +1366,12 @@ td {
 
   .function-container p {
     font-size: 18px;
-    margin-bottom: 40px;
-    line-height: 40px;
+    margin-bottom: 18%;
+    line-height: 37px;
   }
-
-  .function-container__func1 p,
-  .function-container__func2 p,
-  .function-container__func3 p {
-    margin-bottom: 87px;
+  .function1_text {
+    margin-bottom: 10%;
   }
-
   .function-container__func-text-blue {
     order: 0;
   }
@@ -1596,7 +1593,6 @@ td {
 
     background-repeat: no-repeat, no-repeat;
   }
-
   .preloader-text {
     font-size: 2rem;
   }
@@ -1791,8 +1787,12 @@ td {
 
   .func1__popup-img-2 {
     top: 50%;
-    right: -44px;
+    right: -30%;
     width: 217px;
+  }
+  .function1_text p {
+    color: red;
+    margin-bottom: 30%;
   }
 
   .func2__popup-img-1 {
@@ -1807,23 +1807,26 @@ td {
   }
 
   .func3__popup-img-1 {
-    top: 47%;
+    top: 43%;
     right: -10%;
   }
 
   .func3__popup-img-2 {
     top: 35%;
-    left: -25%;
+    left: -19%;
+    width: 42%;
   }
 
   .func3__popup-img-3 {
     top: 10%;
-    right: -18%;
+    right: -12%;
+    width: 33%;
   }
 
   .func3__popup-img-4 {
     top: -2%;
-    left: -20%;
+    left: -17%;
+    width: 40%;
   }
 
   .func4__popup-img-1 {
@@ -1832,32 +1835,25 @@ td {
   }
 
   .func4__popup-img-2 {
-    top: 200px;
-    right: -35px;
-    width: 100px;
+    top: 40%;
+    right: -17%;
+    width: 40%;
   }
 
   .func5__popup-img-1 {
-    top: 174px;
-    left: -40px;
+    top: 44%;
+    left: -15%;
   }
 
   .func5__popup-img-2 {
-    top: 25px;
-    right: -35px;
-    width: 100px;
+    top: 5%;
+    right: -19%;
+    width: 46%;
   }
-
-  .function-container p {
+  .function_text {
     font-size: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 25%;
     line-height: 35px;
-  }
-
-  .function-container__func1 p,
-  .function-container__func2 p,
-  .function-container__func3 p {
-    margin-bottom: 87px;
   }
 
   .function-container__func-text-blue {
