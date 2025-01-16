@@ -379,7 +379,10 @@ a {
   color: #0e202e;
   margin: 75px 0px 50px 0px;
 }
-
+.responsive-image[data-mobile-src] {
+  height: 393px; /* Set your desired height */
+  width: 195px; /* Set your desired width */
+}
 /* 機能一覧セックション */
 .function-container {
   display: flex;
