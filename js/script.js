@@ -1,15 +1,4 @@
 let currentSlideIndex = 0;
-// window.addEventListener("load", function () {
-//   const preloader = document.querySelector(".preloader");
-//   const preloaderText = document.querySelector(".preloader-text");
-
-//   preloaderText.style.animation = "fadeOut 1s forwards";
-
-//   preloader.addEventListener("animationend", function () {
-//     preloader.style.display = "none";
-//   });
-// });
-
 document.addEventListener("scroll", function () {
   const images = document.querySelectorAll(
     ".popup-func1__img-boxshadow, .popup-func__img-boxshadow-whitediv, .popup-icons-boxshadow, .popup-icons-boxshadow-whitediv"
@@ -108,7 +97,7 @@ window.addEventListener("resize", () => {
   showSlide(currentSlideIndex);
 });
 
-//自動で移動
+//slide automation
 setInterval(() => {
   const slidesLength = document.querySelectorAll(
     ".mainFeatures-container__slides-container__slide"
@@ -204,7 +193,7 @@ offScreenMenu.addEventListener("click", (event) => {
     );
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: "smooth", // Smooth scrolling
+        behavior: "smooth",
         block: "start", // Align to the top of the viewport
       });
     }
@@ -214,7 +203,7 @@ offScreenMenu.addEventListener("click", (event) => {
     offScreenMenu.classList.remove("active");
   }
 });
-//よくある質問
+//FAQ
 const faqs = document.querySelectorAll(".faq-container__question");
 
 faqs.forEach((faq) => {

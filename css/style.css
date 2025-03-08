@@ -521,20 +521,14 @@ a {
 .func_sp-img {
   width: 100%;
   height: auto;
-  /* Ensure the aspect ratio is maintained */
   max-width: 100%;
-  /* Prevent the image from exceeding the container size */
   min-width: 512px;
-  /* Minimum width constraint */
 }
 
 .func_sp-img img {
   width: 100%;
-  /* Image will scale based on the container's width */
   height: auto;
-  /* Maintain the aspect ratio */
   max-width: 100%;
-  /* Prevent the image from becoming larger than its container */
 }
 
 .func1__popup-img-1 {
@@ -553,7 +547,6 @@ a {
   align-items: center;
   text-align: center;
 }
-
 /* function1 */
 
 /* function2 */
@@ -572,7 +565,6 @@ a {
   right: 2%;
   bottom: 20%;
 }
-
 /* function2 */
 
 /* function3 */
@@ -649,7 +641,6 @@ a {
 
 .mainFeatures-container__slides-container__slide {
   height: 100%;
-  /* Ensure the slides fill the container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -769,7 +760,6 @@ a {
 }
 
 /* 比較表セックション */
-/* Container for the table */
 .comparison-table-container {
   width: 675px;
   max-width: 700px;
@@ -928,8 +918,8 @@ td {
   display: flex;
   align-items: flex-start;
 }
-
 /* よくある質問セックション */
+
 /* CTAセックション */
 .cta-container__button-yellow {
   text-align: center;
@@ -976,8 +966,8 @@ td {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 /* CTAセックション */
+
 /* Footer セックション */
 .footer-container {
   display: grid;
